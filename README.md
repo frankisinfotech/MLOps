@@ -14,15 +14,15 @@
     - Install python
 
 5. Verify Python and Pip
-   $ python --version
-   $ pip --version
-   $ which python
+    - python --version
+    - pip --version
+    - which python
 
 7. Install Jupyter notebooks and Labs
-   $ pip install jupyter lab
-   $ pip install jupyter notebook
+    - pip install jupyter lab
+    - pip install jupyter notebook
    
 9. Install Python Libraries for ML
-   $ pip install numpy
-   $ pip install pandas
-   $ pip install scikit-learn
+    - pip install numpy
+    - pip install pandas
+    - pip install scikit-learn
