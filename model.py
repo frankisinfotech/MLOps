@@ -19,5 +19,6 @@ lr = LinearRegression()
 model = lr.fit(X_train,y_train)
 
 # Save the model using Pickling (serialization)
+# This process of Serialization is a way of packaging the model as an artifact
 with open('model/model.pkl', 'wb') as file:
     pickle.dump(model, file)
