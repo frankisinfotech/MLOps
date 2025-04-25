@@ -11,18 +11,18 @@
 3. Install Visual Studio Code https://code.visualstudio.com/download
 
 4. Install Python
-    - Create a Directory named 'python' in Drive C  ex: C:\python
+    - Install python
 
 5. Verify Python and Pip
        $ python --version
        $ pip --version
-       $ which python   (output: C:\python\python.exe)
+       $ which python
 
 6. Install Jupyter notebooks and Labs
        $ pip install jupyter lab
        $ pip install jupyter notebook
-
-7. Install Python Libraries for ML
+   
+8. Install Python Libraries for ML
        $ pip install numpy
        $ pip install pandas
        $ pip install scikit-learn
