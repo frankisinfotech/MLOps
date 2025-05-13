@@ -9,6 +9,16 @@ aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
 aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
 
 
+# Check if the environment variables are set
+if aws_access_key_id and aws_secret_access_key:
+    logging.info("AWS Access Key and Secret Key have been retrieved successfully.")
+    logging.info("AWS Access Key ID: %s", aws_access_key_id)
+    logging.info("AWS Secret Access Key: %s",
+        aws_secret_access_key[:4] + "*" * 16 + aws_secret_access_key[-4:])
+else:
+    raise EnvironmentError("AWS Access Key or Secret Key not set properly.")
+
+
 @dsl.component(packages_to_install=["numpy", "pandas", "scikit-learn", "boto3"])
 def build_model(aws_access_key_id: str, aws_secret_access_key: str):
     # Import Libraries
