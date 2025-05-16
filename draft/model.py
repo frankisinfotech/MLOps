@@ -49,7 +49,7 @@ def build_model(aws_access_key_id: str, aws_secret_access_key: str):
     rentalDF = pd.read_csv(local_data_path)
 
     # Prepare the features and labels
-    X = rentalDF[["rooms", "sqft"]].values
+    X = rentalDF[["rooms", "area"]].values
     y = rentalDF["price"].values
     
     # Split the dataset into training and testing sets
