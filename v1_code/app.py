@@ -2,6 +2,7 @@ import numpy as np
 import pickle
 import json
 
+# Deserialization
 with open('model/model.pkl', 'rb') as file:
     model = pickle.load(file)
 
